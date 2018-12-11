@@ -87,28 +87,28 @@ HIGH_IMPULSION
 	
 HIMP_REPEAT
 	bsf		GPIO, IR_LED	; On the LED
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
 	bcf		GPIO, IR_LED	; Off the LED
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
-	nop
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
+	nop				;Chuck Testa
 	decfsz 	counterMs,1		; Decrement counterMs, skip if 0
 	goto HIMP_REPEAT
 	retlw	0				; End the call
